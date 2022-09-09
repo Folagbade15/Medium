@@ -1,0 +1,689 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Top 4 ways to eliminate errors from your research paper.</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="694bba68-7975-4037-baef-6cf33cd92d71" class="page serif"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?ixlib=rb-1.2.1&amp;q=80&amp;cs=tinysrgb&amp;fm=jpg&amp;crop=entropy" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✏️</span></div><h1 class="page-title">Top 4 ways to eliminate errors from your research paper.</h1></header><div class="page-body"><p id="abc87b62-f7f0-4438-ab50-5e0711e6f7d8" class="">
+</p><p id="5671482b-e505-4f0c-af29-d2939d4d06f9" class="">Writing a scientific research paper can be a daunting task but it is an indispensable activity in many fields. In certain industries and fields, research is integral to success while for others it is inessential, but still offers a wealth of benefits. Scientific research papers are simply the concise and direct documentations of scientific research activities and finding. There’s always  something to learn, and this is at the root of every scientific research. While research primarily lets you explore data, it also helps to unlock unknowns and facilitate deeper understanding of specific subject matters. The need for research papers lies in the fact that research findings need to be communicated to professionals in a subject matter and in some cases to the general public, hence the need for scientific research papers to be concise, straightforward, and free of errors. </p><p id="65c45d3e-8711-49c9-a71c-446d53532e1a" class="">Here are the top 5 ways to make your scientific research paper interesting:</p><p id="869ccf0c-6962-4d22-a8df-c24005103eee" class="">
+</p><h3 id="3088ac65-0178-495e-91b5-eec97ef50a14" class="">Don’t use quotes </h3><figure id="40c587ad-1297-4169-b8f5-97d610cf4bc3" class="image" style="text-align:left"><a href="Top%204%20ways%20to%20eliminate%20errors%20from%20your%20research%20%2040c587ad12974169b8f597d610cf4bc3/Downloader.la-631b54e16bd48_(1).jpg"><img style="width:384px" src="Top%204%20ways%20to%20eliminate%20errors%20from%20your%20research%20%2040c587ad12974169b8f597d610cf4bc3/Downloader.la-631b54e16bd48_(1).jpg"/></a></figure><p id="a974f3c0-9b10-4d1e-95ed-c5d58b0816e0" class="">
+</p><p id="a6ca6741-39f3-46de-b6b5-28abfe65e57d" class="">Direct quotations are frequently necessary for a thorough discussion of the topic, notably in disciplines like literature and history. But there is rarely a need for verbatim quotations in science. The majority of the time, when a student or researcher directly quotes a piece of information in a scientific research paper, it means that they don&#x27;t understand the subject or concept being discussed and are trying to avoid explaining it. In a scholarly technical work, avoid using direct quotes as a general rule. </p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6cb9b5ce-99c3-4e8d-8906-a5dbffc137c3"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">You should always strive to articulate concepts using your own words and ideas, not those of another person.</div></figure><p id="ab85ac5c-05c5-4999-afe7-f8afb9c2fa4c" class="">
+</p><h3 id="ff153df0-046e-4a6e-9f3c-1ec2311fdb21" class="">Be careful with your use of verb tense</h3><p id="3684379d-e61c-4e46-bb83-833ecad4b4d4" class="">Using the incorrect verb tense in your paper reflects poorly on your writing skills.  This can make it difficult for your audience to distinguish between information that is already established and information that you have just discovered in your experiment. To depict past events, the best and only way is to use past tense. These include the practices, methods, and actions and you&#x27;ve taken, as well as the results you observed.  It is best to use present tense only when you are describing universally recognized facts.</p><p id="a9a8cd35-a46e-44ad-bddf-13d81b3e182a" class="">Best practice:</p><p id="abaf7a62-e3b6-4716-a60c-42d1a986271c" class="block-color-yellow_background">We <strong>sought </strong>to determine if mating behavior in Xiphophorus helleri <strong>is </strong>related to male tail length
+by placing combinations of two male fish with different length tails in the same tank with a female fish.</p><p id="fb00d1b2-5b6a-475f-b555-db7fe7a6fc76" class="block-color-yellow_background">We <strong>found </strong>that protein synthesis in sea urchin embryos treated with actinomycin D <strong>was
+</strong>considerably less than in untreated embryos. This finding agrees with the model stating that protein synthesis in 24 hours sea urchin embryos <strong>is </strong>dependent on synthesis of new messenger RNA.</p><p id="d65a407a-6115-467e-b84d-fd65caa6a4e3" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="71cb9fcb-1ffb-4d37-a676-894c6e0d2275"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Avoid mixing tenses!
+For instance: <em>Two guys </em><em><strong>rob </strong></em><em>a liquor store downtown. The robbery </em><em><strong>occurred </strong></em><em>at midnight last night.</em></div></figure><p id="f5ae50cf-76c4-4d24-9bf7-8d4200f544b3" class="">
+</p><h3 id="1fe7598b-c681-414f-bdc2-78272369b9dc" class="">Avoid peddling irrelevant information </h3><p id="13b3ead9-985f-477e-9b8e-fce2e5dd18b0" class="">Writing a research paper comes with the temptation of pouring in too many information, especially when you want to try to impress your readers. However, this never goes well because many things can go wrong and the credibility of your paper, and your research goes out the window. To avoid this, you need to:</p><p id="f702040d-0a78-466a-81cc-e8d4e455d2c8" class="">
+</p><p id="b14b9530-9ecf-425d-b770-f9e9bbae2b9e" class=""><em>Avoid unnecessary background </em></p><p id="9cdf903e-0234-41a9-b21e-b72bff784aa8" class="">If you are stating facts or describing the methods that you used in your work, do it solely for the purpose of making a point or helping to interpret results, and ensure you refer to the present study. Once you start putting down all you know or there is about the subject matter, you are beginning to waste your time (and yes, that of your readers too).</p><p id="3489de2c-2a16-4519-a3ce-06381a19fae4" class="">
+</p><p id="e72767a5-c968-456e-97d0-82cc74a322fe" class=""><em>Do away with materials and information that are inappropriate for the readership</em> </p><p id="4274b2b4-e3ea-4455-b25b-7a80e64547ba" class="">It is not necessary to tell fellow scientists that your study is pertinent to a particular field. They can figure out to what field(s) your work applies. Also, you don’t need to define terms that are well known to the intended readership. For example, do you really think it is necessary to define <strong>bureaucracy</strong> if your audience consists strictly of political scientists? </p><p id="242d56f5-aaae-4e45-87af-5be27e949793" class="">
+</p><p id="5a55bf74-87fb-483d-acd8-7b441844815b" class=""><em>Steer clear of subjectivity and use of superlatives </em></p><p id="78d562c7-c766-40f2-b53f-836c798249f3" class="">Subjectivity refers to feelings, opinions, etc. Upon finalizing your paper and then discussing your finding, writing statements like “We felt that the current Nigerian government is the most corrupt in the history of the country…” It is improbable that another researcher reading your work will risk time and resources on the basis of your &quot;feeling.&quot; Contrariwise, a sentence like &quot;The percentage of public funds embezzlement by government officials in the last 7 years was double the percentage of public funds embezzlement by government officials in the combined 29 years prior, suggesting that the present administration has a more corrupt reputation than majority of the past administration.”, is information that another scientist can use.</p><p id="496a69fb-2e58-4db4-ac66-5d90766178f9" class="">
+</p><p id="df94b532-42dc-409f-b89f-522542fd88a1" class="">Superlatives include adjectives such as &quot;huge,&quot; &quot;incredible,&quot; &quot;wonderful,&quot; &quot;exciting,&quot; etc. For example, &quot;the machine showed an incredibly huge increase in combustion rate when water was added.” A five-fold increase may seem incredible to you but not to a proportion of your readers, hence, your definition of incredible is different from theirs. It is better to use an objective expression, like &quot;The combustion rate was five-fold greater in the presence of water, which is a greater change than we saw when other solvents were added.”</p><p id="ee2f737f-5700-49a9-8412-ab4ded5240df" class="">
+</p><p id="cb48ff72-00c5-4d85-9487-354910ab0ae5" class=""><em>Pay attention to your grammar and spelling</em></p><p id="5ed67979-3d93-47fa-9393-8c7d5ba54f6a" class="">You just have to avoid obvious grammatical errors. Clear written communication requires proper sentence structure and use of words. Make sure that your sentences are complete, that they make sense when you proofread, and that you have verb/subject agreement.</p><p id="ad47ffb4-1cf2-4283-9727-8cb163b9568b" class="">Spelling errors in a paper make you look not serious. For example, <em>absorbance </em>is read from a
+<em>spectrophotometer</em>. You don&#x27;t read <em>absorbency </em>from a <em>spectrometer</em>. Worse, they can change the
+entire meaning of your writing. Additionally, one letter can change what you are describing. Example of errors like this can be caused by words like <em>lose </em>and <em>loose</em>, <em>desert</em> and <em>dessert</em>. </p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0400e9da-b4a9-4cd6-8eba-eee2442d20f4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">I know the function of <em>adenosine triphosphate</em> in the human body but i do not know what <em>adenosine triophosphate</em> is.</div></figure><p id="2e853ecd-91da-483a-b181-42869a77d94d" class="">
+</p><p id="8e2d40cd-8227-4695-9e78-cb697cb9a8db" class=""><strong>Proofread!</strong></p><p id="5c0292e1-bf53-416e-9cac-3f9ebcaf8a7b" class="">Incomplete sentences, redundant phrases, obvious misspellings, and other symptoms of a hurriedly-written paper can cost you. Please start your work early enough so that you can proofread it. Check spelling of scientific names, names of people and places, terminologies, names of compounds, etc. Spelling and grammatical errors can be embarrassing. There are a ton of words and terminologies with similar names. Consequently, a spelling error can result in a completely incorrect statement.
+</p><p id="e62bf803-86d2-42d3-95d6-706017b92789" class=""><strong>Remember, someone has to read that paper!</strong></p><p id="c07d715c-1291-4735-be90-a3815e18c6c1" class="">
+</p></div></article></body></html>
